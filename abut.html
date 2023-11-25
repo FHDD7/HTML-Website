@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table, th, td {
+                width: 5px;
+              border:1px solid black;
+              border-collapse: collapse;
+              margin: 50px;
+              padding: 20px;
+              text-align: center;
+            }
+            tr {
+                transition: all .2s ease-in;
+                cursor: pointer;
+            }
+            tr:nth-child(even) 
+            {
+                background-color: #fff;
+            }
+            tr:nth-child(odd) 
+            {
+                background-color: #ddd;
+            }
+            th,td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            #he {
+              background-color:#16a085 ;
+              color: #fff;
+            }
+            #h1{
+                font-weight: 600;
+                text-align:center ;
+                background-color:#16a085 ;
+                color: #fff;
+                padding: 10px 0px;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+                transform: scale(1.02);
+                box-shadow: 2px 2px 12px black, -1px -1px 8px rgba(0, 0,0,0.2)
+            }
+            </style>
+    </head>
+    <body>
+
+        <table class="center">
+        
+            <h1 id="h1">TH elements define table headers</h1>
+          <tr>
+            <th id="he">Name</th>
+            <th>Fahad Alatawi</th>
+            <th>Person 3</th>
+          </tr>
+          <tr>
+            <th id="he">Age</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+          </tr>
+          <tr>
+            <th id="he">Languages</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th id="he">Skills</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+        </table>
+        
+    </body>
+</html>
